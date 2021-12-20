@@ -1,9 +1,11 @@
 {
-  "background_color": "purple",
+  "background_color": "
+#F55A3B
+",
   "description": "Timetable.",
   "display": "standalone",
-  "theme":"#ffae01",
-  "background":"#ffae01",
+  "theme":"#f55a3b",
+  "background":"#f55a3b",
   "icons": [
     {
       "src": "icon-192x192.png",
