@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;350&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  --agr:#33a04a;
+  --bio:#536b2d;
+  --bs:#c63e37;
+  --chem:#20ade8;
+  --cre:#ea098c;
+  --eng:#1e3f90;
+  --geo:#0291c8;
+  --hist:#92242d;
+  --kis:#9d1f81;
+  --maths:#b51d60;
+  --phy:#5e2988;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #001d54;
+  font-size: 10px;
+  font-family: "poppins", sans-serif;
+  color: #f2e330;
+  color: #fff;
+  overflow: scroll;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-rows: 1fr 1fr repeat(5,1fr);
+  grid-row-gap: 0px;
+ /* width: 1000px;*/
+  padding: .05px;
+  text-align: center;
+  border: none;
+  margin: 5px;
+  height: auto;
+  width: 500px;
+  background: #001d54;
+  border: 1px solid white;
+display: none;
+overflow: scroll;
+color: #f2e330;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr repeat(9,1fr);
+  grid-column-gap:0px;
+  
+}
+
+.left-most-div,
+.period,
+.times{
+  font-weight: bolder;
+  text-transform: uppercase;
+  border: .02px solid black;
+
+}
+
+.left-most-div{
+  font-weight: bolder !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*period start*/
+.period{
+  grid-template-areas: "title morning morning evening evening night night night night night";
+  font-weight: bolder;
+  /*height: 25px;
+  margin-bottom: -300px;*/
+  border-bottom: 2px solid white !important;
+  align-items: center;
+  height: 100%;
+}
+
+.title{
+  grid-area: title;
+}
+
+.morning{
+  grid-area: morning;
+}
+
+.evening{
+  grid-area: evening;
+}
+
+.night{
+  grid-area: night;
+}
+/*end period*/
+
+/*start times*/
+.times{
+  grid-template-areas: "timeTitle time1 time2 time3 time4 time5 time6 time7 time8 time9";
+  font-weight: bold;
+  border-bottom: 2px solid white !important;
+  color: white;
+}
+
+.time1, .time2, .time3, .time4, .time5, .time6, .time7, .time8, .time9{
+  border-left: 2px solid #f2e330 !important;
+  display: flex;
+  align-items: center;
+}
+
+.times .title{
+  grid-area: timeTitle;
+  border-right: 0px solid white !important;
+  place-self: center;
+}
+.time1{
+  grid-area: time1;
+  border-right: 0px solid white !important;
+  
+}
+.time2 {
+  grid-area: time2;
+}
+.time3 {
+  grid-area: time3;
+}
+.time4 {
+  grid-area: time4;
+}
+.time5 {
+  grid-area: time5;
+}
+.time6 {
+  grid-area: time6;
+}
+.time7 {
+  grid-area: time7;
+}
+.time8 {
+  grid-area: time8;
+}
+.time9 {
+  grid-area: time9;
+}
+
+/*end times*/
+
+div{
+ border: 0px solid #001d54;
+ /*display: flex;
+ align-items: center;*/
+}
+
+.day{
+  color: yellow;
+  border-right: 1px solid yellow !important;
+}
+
+ .morning, .evening, .night{
+  border-left: 2px solid white !important;
+}
+
+.diagonal{
+  background: linear-gradient(to top right, #001d54 calc(50% - 1px), yellow , #001d54 calc(50% + 1px) );
+}
+
+/*.assg,.cell*/
+.day div{
+  font-weight: 400;
+  padding: 5px;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+}
+
+button{
+  background: #b51d60;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  transition-duration: 150ms;
+  
+}
+.save-btn{
+  display: none;
+}
+button:active{
+  opacity: .8;
+  transform: scale(1.02);
+}
+
+.assg{
+  background: #3a2162;
+  color: white;
+}
+
+.choices{
+  display: flex;
+  flex-direction: column;
+  place-self: left;
+  margin:0 20px;
+  font-size: 20px;
+  
+}
+
+.pretty{
+  
+  margin: 5px;
+}
+
+.next-btn{
+  display: block;
+  margin: 10px;
+}
+
+.all-btn{
+  width: max-content;
+}

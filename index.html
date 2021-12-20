@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Timetable maker - new!</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+
+<body>
+  <div class="wrapper">
+    <div class="grid period">
+      <div class="title">Period</div>
+      <div class="morning">Morning Prep</div>
+      <div class="evening">Evening Prep</div>
+      <div class="night">Night Prep</div>
+    </div>
+    <div class="grid times">
+      <div class="title diagonal">&nbsp &nbsp &nbsp &nbsp &nbsp time Day&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</div>
+      <div class="time1">4.45a.m 5.15a.m</div>
+      <div class="time2">5.15a.m 5.45a.m</div>
+      <div class="time3">5.00p.m 5.30p.m</div>
+      <div class="time4">5.30p.m 6.00p.m</div>
+      <div class="time5">7.00p.m 7.30p.m</div>
+      <div class="time6">7.30p.m 8.00p.m</div>
+      <div class="time7">8.00p.m 8.30p.m</div>
+      <div class="time8">8.30p.m 9.00p.m</div>
+      <div class="time9">9.00p.m 9.30p.m</div>
+    </div>
+    <!--monday-->
+    <div class="grid day">
+      <div class="left-most-div">Mon</div>
+      <div class="cell">Eng</div>
+      <div class="cell">Kisw</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell">agri</div>
+      <div class="assg">ASSG</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <!--Tuesday-->
+    <div class="grid day">
+      <div class="left-most-div">Tue</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell">cre</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="assg">ASSG</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <!--wed-->
+    <div class="grid day">
+      <div class="left-most-div">Wed</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="assg">ASSG</div>
+      <div class="cell"></div>
+      <div class="cell">kis</div>
+      <div class="cell"></div>
+    </div>
+    <!--wed-->
+    <div class="grid day">
+      <div class="left-most-div">Thur</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell">eng</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="assg">ASSG</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <!--Fri-->
+    <div class="grid day">
+      <div class="left-most-div">Fri</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell">phy</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="assg">ASSG</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    
+    <div style="padding:5px;background:#3a2162;
+    color: #fff;border: none;">
+       “If there is no struggle, there is no progress.“ – Frederick Douglass
+    </div>
+  </div>
+  
+  <div class="choices">
+  
+  <h3>Choose your Subjects</h3>
+ <div data-sub="ALL" class="all pretty p-icon p-round p-pulse">
+    <input class="all-box" type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>All</label>
+    </div>
+  </div>
+<div data-sub="MATHS" class="pretty p-icon p-round p-pulse">
+    <input checked type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>Mathematics</label>
+    </div>
+  </div>
+  
+  <div data-sub="ENG" class="pretty p-icon p-round p-pulse">
+    <input checked type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>English</label>
+    </div>
+  </div>
+  
+  <div data-sub="KIS" class="pretty p-icon p-round p-pulse">
+    <input checked type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>Kiswahili</label>
+    </div>
+  </div>
+  
+  <div data-sub="CHEM" class="pretty p-icon p-round p-pulse">
+    <input checked type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>Chemistry</label>
+    </div>
+  </div>
+  
+  <div data-sub="BIO" class="pretty p-icon p-round p-pulse">
+    <input type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>Biology</label>
+    </div>
+  </div>
+  
+  <div data-sub="PHY" class="pretty p-icon p-round p-pulse">
+    <input type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>Physics</label>
+    </div>
+  </div>
+  
+  <div data-sub="GEO" class="pretty p-icon p-round p-pulse">
+    <input type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>Geography</label>
+    </div>
+  </div>
+  
+  <div data-sub="BS" class="pretty p-icon p-round p-pulse">
+    <input type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>Business</label>
+    </div>
+  </div>
+  
+  <div data-sub="AGR" class="pretty p-icon p-round p-pulse">
+    <input type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>Agriculture</label>
+    </div>
+  </div>
+  
+  <div data-sub="HSCIE" class="pretty p-icon p-round p-pulse">
+    <input type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>Home science</label>
+    </div>
+  </div>
+  
+  <div data-sub="CRE" class="pretty p-icon p-round p-pulse">
+    <input type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>CRE</label>
+    </div>
+  </div>
+  
+  <div data-sub="HIS" class="pretty p-icon p-round p-pulse">
+    <input type="checkbox" />
+    <div class="state p-success">
+      <i class="icon mdi mdi-check"></i>
+      <label>History</label>
+    </div>
+  </div>
+  <button class="next-btn">Next</button>
+  </div>
+  
+  <button class="save-btn">Save Timetable</button>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

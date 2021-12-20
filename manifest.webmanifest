@@ -1,0 +1,22 @@
+{
+  "background_color": "purple",
+  "description": "Timetable.",
+  "display": "standalone",
+  "theme":"#ffae01",
+  "background":"#ffae01",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src":"icon-512x512.png",
+      "sizes":"512x512",
+      "type":"image/png"
+    }
+  ],
+  "name": "by Gerison",
+  "short_name": "Timetable",
+  "start_url": "index.html"
+}
