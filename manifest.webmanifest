@@ -2,7 +2,7 @@
   "background_color": "#F55A3B",
   "description": "Timetable.",
   "display": "standalone",
-  "theme":"#f55a3b",
+  "theme_color":"#f55a3b",
   "background":"#f55a3b",
   "icons": [
     {
