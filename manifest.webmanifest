@@ -1,7 +1,5 @@
 {
-  "background_color": "
-#F55A3B
-",
+  "background_color": "#F55A3B",
   "description": "Timetable.",
   "display": "standalone",
   "theme":"#f55a3b",
