@@ -1,7 +1,7 @@
 const cacheName = "cache1"; // Change value to force update
 const toCache = [
      "/",
-  // "https://fonts.googleapis.com",
+  "https://fonts.googleapis.com",
  // "https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap",
   //"https://fonts.gstatic.com",
   //"https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css",
