@@ -3,7 +3,7 @@ const toCache = [
      "/",/*
   "https://fonts.googleapis.com",
   "https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap",
-  "https://fonts.gstatic.com",
+  "https://fonts.gstatic.com",*/
   "https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css",
   "https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css",
    "https://cdn.jsdelivr.net/npm/toastify-js"
@@ -14,7 +14,7 @@ const toCache = [
   'index.js',
   'index.html',
   'style.css',
-  'manifest.webmanifest' */
+  'manifest.webmanifest' 
   ]
 self.addEventListener("install", event => {
   // Kick out the old service worker
