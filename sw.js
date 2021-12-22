@@ -18,7 +18,7 @@ const toCache = [
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open('v1').then((cache) => cache.addAll(toCache)),
+    caches.open('v1').then((cache) => cache.addAll(toCache))//,
   );
 });
 
