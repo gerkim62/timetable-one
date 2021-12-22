@@ -1,7 +1,7 @@
 {
   "background_color": "#F55A3B",
   "description": "Timetable.",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color":"#f55a3b",
   "background":"#f55a3b",
   "icons": [
