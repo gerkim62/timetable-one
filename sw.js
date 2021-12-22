@@ -6,8 +6,7 @@ const toCache = [
   //"https://fonts.gstatic.com",
   //"https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css",
  // "https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css",
-   //"https://cdn.jsdelivr.net/npm/toastify-js"
-  ,
+   //"https://cdn.jsdelivr.net/npm/toastify-js",
   'icon-512x512.png',
   'icon-192x192.png',
   "https://cdn.jsdelivr.net/npm/toastify-js",
