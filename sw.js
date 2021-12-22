@@ -1,6 +1,6 @@
 const cacheName = "cache1"; // Change value to force update
 const toCache = [
-     "/",
+     "/",/*
   "https://fonts.googleapis.com",
   "https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap",
   "https://fonts.gstatic.com",
@@ -14,7 +14,7 @@ const toCache = [
   'index.js',
   'index.html',
   'style.css',
-  'manifest.webmanifest'
+  'manifest.webmanifest' */
   ]
 self.addEventListener("install", event => {
   // Kick out the old service worker
