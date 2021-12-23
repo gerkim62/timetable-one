@@ -45,7 +45,15 @@ function showTable(){
   document.querySelector('.wrapper').style.display = 'grid';
   document.querySelector('.choices').style.display = 'none'
   console.log('$$')
-screen.orientation.lock("landscape")
+try {
+    screen.orientation.lock("landscape").catch((e) => {
+      alert(e.message)
+    });
+  }
+
+  catch (err) {
+    alert(err.message);
+  }
 }
 
 allBtn.addEventListener('change',()=>{
