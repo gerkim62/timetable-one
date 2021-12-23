@@ -47,23 +47,23 @@ function showTable(){
   console.log('$$')
 try {
  document.querySelector('body').requestFullscreen().catch((e)=>{
-alert(e.message)
+console.log(e.message)
 });
 }
 catch(err) {
-alert(err.message);
+console.log(err.message);
 }
 
-alert("screen ")
+console.log("screen ")
 
 try {
     screen.orientation.lock("landscape").catch((e) => {
-      alert(e.message)
+      console.log(e.message)
     });
   }
 
   catch (err) {
-    alert(err.message);
+    console.log(err.message);
   }
 }
 
