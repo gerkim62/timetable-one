@@ -46,6 +46,15 @@ function showTable(){
   document.querySelector('.choices').style.display = 'none'
   console.log('$$')
 try {
+ document.querySelector('body').requestFullscreen().catch((e)=>{
+alert(e.message)
+});
+}
+catch(err) {
+alert(err.message);
+}
+
+try {
     screen.orientation.lock("landscape").catch((e) => {
       alert(e.message)
     });
