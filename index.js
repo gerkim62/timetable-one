@@ -54,6 +54,8 @@ catch(err) {
 alert(err.message);
 }
 
+alert("screen ")
+
 try {
     screen.orientation.lock("landscape").catch((e) => {
       alert(e.message)
