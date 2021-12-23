@@ -38,12 +38,14 @@ btnNext.addEventListener('click',()=>{
   newArr()
   console.log('&&')
   showTable()
+
 })
 //showTable()
 function showTable(){
   document.querySelector('.wrapper').style.display = 'grid';
   document.querySelector('.choices').style.display = 'none'
   console.log('$$')
+screen.orientation.lock("landscape")
 }
 
 allBtn.addEventListener('change',()=>{
